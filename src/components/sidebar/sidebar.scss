@@ -1,8 +1,9 @@
 .sidebar {
-  flex: 2;
+  flex: 1;
   border-right: 0.5px solid rgb(230, 227, 227);
   min-height: 100vh;
   background-color: white;
+  // background-color: green;
 
   .top {
     // background-color: rebeccapurple;
@@ -54,9 +55,10 @@
         color: #7451f8;
       }
 
-      span {
+      .link {
         font-size: 13px;
         font-weight: 600;
+        text-decoration: none;
         color: #888;
         margin-left: 10px;
       }

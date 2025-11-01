@@ -12,6 +12,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = () => {
@@ -32,28 +33,29 @@ const Sidebar = () => {
           <p className='title'>Lists</p>
           <li>
             <PersonIcon className='icon' />
-            <span>Users</span>
+            {/* <span>Users</span> */}
+            <Link to="/users" className='link'>Users</Link>
           </li>
 
           {/* ##################### */}
 
           <li>
             <StoreIcon className='icon' />
-            <span>Products</span>
+            <span className='link'>Products</span>
           </li>
 
           {/* ##################### */}
 
           <li>
             <CreditCardIcon className='icon'/>
-            <span>Orders</span>
+            <span className='link'>Orders</span>
           </li>
 
           {/* ##################### */}
 
           <li>
             <LocalShippingIcon className='icon' />
-            <span>Delivery</span>
+            <span className='link'>Delivery</span>
           </li>
 
 {/* ------------------------------------------------- */}
@@ -61,49 +63,49 @@ const Sidebar = () => {
           <p className='title'>Useful</p>
           <li>
             <AssessmentIcon className='icon' />
-            <span>Stats</span>
+            <span className='link'>Stats</span>
           </li>
 
           {/* ##################### */}
           
           <li>
             <NotificationsIcon className='icon'/>
-            <span>Notifications</span>
+            <span className='link'>Notifications</span>
           </li>
 
 {/* ----------------------------------------------------- */}
           <p className='title'>Services</p>
           <li>
             <SettingsSystemDaydreamIcon className='icon'/>
-            <span>System Health</span>
+            <span className='link'>System Health</span>
           </li>
 
           {/* ##################### */}
           
           <li>
             <PsychologyIcon className='icon'/>
-            <span>Logs</span>
+            <span className='link'>Logs</span>
           </li>
 
           {/* ##################### */}
           
           <li>
             <SettingsIcon className='icon'/>
-            <span>Settings</span>
+            <span className='link'>Settings</span>
           </li>
 
 {/* ------------------------------------------------------- */}
           <p className='title'>User</p>
           <li>
             <AccountCircleIcon className='icon'/>
-            <span>Profile</span>
+            <span className='link'>Profile</span>
           </li>
 
           {/* ##################### */}
           
           <li>
             <ExitToAppIcon className='icon'/>
-            <span>Logout</span>
+            <span className='link'>Logout</span>
           </li>
 
           {/* ##################### */}
